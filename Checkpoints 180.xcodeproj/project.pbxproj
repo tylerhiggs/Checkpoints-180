@@ -14,10 +14,13 @@
 		5731D91B25A4C65F00204BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5731D91A25A4C65F00204BC1 /* Assets.xcassets */; };
 		5731D91E25A4C65F00204BC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5731D91C25A4C65F00204BC1 /* LaunchScreen.storyboard */; };
 		5731D92D25A4CDCC00204BC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5731D92C25A4CDCC00204BC1 /* GoogleService-Info.plist */; };
+		573E7AC525AE57710032F175 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E7AC425AE57700032F175 /* HomeViewController.swift */; };
 		575BE3DA25A5629000564D82 /* KeyboardRaisingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575BE3D925A5629000564D82 /* KeyboardRaisingButton.swift */; };
 		575BE3DE25A562DA00564D82 /* FieldHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575BE3DD25A562DA00564D82 /* FieldHelper.swift */; };
 		575BE3E325A5694900564D82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575BE3E225A5694900564D82 /* Constants.swift */; };
 		575BE41F25A61B6400564D82 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575BE41E25A61B6400564D82 /* MyButton.swift */; };
+		575BE42325A62D8800564D82 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575BE42225A62D8800564D82 /* SignupViewController.swift */; };
+		57D664CE25ACC01A007197A1 /* NavBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D664CD25ACC01A007197A1 /* NavBarHelper.swift */; };
 		B70A3667072A3EEA2BE08F1D /* Pods_Checkpoints_180.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D414E3E3B9496D9037D7621 /* Pods_Checkpoints_180.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,10 +34,13 @@
 		5731D91D25A4C65F00204BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5731D91F25A4C65F00204BC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5731D92C25A4CDCC00204BC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		573E7AC425AE57700032F175 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		575BE3D925A5629000564D82 /* KeyboardRaisingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardRaisingButton.swift; sourceTree = "<group>"; };
 		575BE3DD25A562DA00564D82 /* FieldHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldHelper.swift; sourceTree = "<group>"; };
 		575BE3E225A5694900564D82 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		575BE41E25A61B6400564D82 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		575BE42225A62D8800564D82 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		57D664CD25ACC01A007197A1 /* NavBarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarHelper.swift; sourceTree = "<group>"; };
 		6D414E3E3B9496D9037D7621 /* Pods_Checkpoints_180.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checkpoints_180.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F68798228CCAE5D2CD8FF7B /* Pods-Checkpoints 180.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkpoints 180.debug.xcconfig"; path = "Target Support Files/Pods-Checkpoints 180/Pods-Checkpoints 180.debug.xcconfig"; sourceTree = "<group>"; };
 		DF30D77378E79B8F61A3F691 /* Pods-Checkpoints 180.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkpoints 180.release.xcconfig"; path = "Target Support Files/Pods-Checkpoints 180/Pods-Checkpoints 180.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,8 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				5731D91125A4C65A00204BC1 /* AppDelegate.swift */,
-				575BE3D825A561D200564D82 /* Models */,
 				5731D91325A4C65A00204BC1 /* SceneDelegate.swift */,
+				575BE3D825A561D200564D82 /* Models */,
 				575BE3E025A5630000564D82 /* Controllers */,
 				5731D91725A4C65A00204BC1 /* Main.storyboard */,
 				5731D91A25A4C65F00204BC1 /* Assets.xcassets */,
@@ -92,6 +98,7 @@
 			children = (
 				575BE3D925A5629000564D82 /* KeyboardRaisingButton.swift */,
 				575BE3DD25A562DA00564D82 /* FieldHelper.swift */,
+				57D664CD25ACC01A007197A1 /* NavBarHelper.swift */,
 				575BE41E25A61B6400564D82 /* MyButton.swift */,
 			);
 			path = Models;
@@ -101,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				5731D91525A4C65A00204BC1 /* StartupViewController.swift */,
+				575BE42225A62D8800564D82 /* SignupViewController.swift */,
+				573E7AC425AE57700032F175 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -134,6 +143,7 @@
 				5731D90B25A4C65A00204BC1 /* Frameworks */,
 				5731D90C25A4C65A00204BC1 /* Resources */,
 				F8F9947FF98ADD6AC53B39EA /* [CP] Embed Pods Frameworks */,
+				E6CFC2A69EEE5736A02F0071 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +223,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E6CFC2A69EEE5736A02F0071 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Checkpoints 180/Pods-Checkpoints 180-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Checkpoints 180/Pods-Checkpoints 180-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Checkpoints 180/Pods-Checkpoints 180-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F8F9947FF98ADD6AC53B39EA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,7 +266,10 @@
 			files = (
 				575BE3DA25A5629000564D82 /* KeyboardRaisingButton.swift in Sources */,
 				5731D91625A4C65A00204BC1 /* StartupViewController.swift in Sources */,
+				57D664CE25ACC01A007197A1 /* NavBarHelper.swift in Sources */,
+				575BE42325A62D8800564D82 /* SignupViewController.swift in Sources */,
 				575BE41F25A61B6400564D82 /* MyButton.swift in Sources */,
+				573E7AC525AE57710032F175 /* HomeViewController.swift in Sources */,
 				5731D91225A4C65A00204BC1 /* AppDelegate.swift in Sources */,
 				5731D91425A4C65A00204BC1 /* SceneDelegate.swift in Sources */,
 				575BE3DE25A562DA00564D82 /* FieldHelper.swift in Sources */,

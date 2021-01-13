@@ -19,15 +19,18 @@ class KeyboardRaisingButton: UIButton {
         }
     }
     
-    static func button(_ viewController: Any?, _ title: String, _ selector: Selector) -> KeyboardRaisingButton {
-        let b = KeyboardRaisingButton()
-        b.setTitle(title, for: .normal)
-        b.titleLabel?.font = UIFont(name: "System Medium", size: 20)
-        b.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
-        b.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-        b.layer.cornerRadius = 21
-        b.addTarget(viewController, action: selector, for: .touchUpInside)
-        return b
+    required init(_ viewController: Any?, _ title: String, _ selector: Selector) {
+        super.init(frame: .zero)
+        self.setTitle(title, for: .normal)
+        self.titleLabel?.font = UIFont(name: "System Medium", size: 20)
+        self.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+        self.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+        self.layer.cornerRadius = 21
+        self.addTarget(viewController, action: selector, for: .touchUpInside)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
     }
     
     func constrain(_ viewController: Any?, _ view: UIView) -> NSLayoutConstraint{

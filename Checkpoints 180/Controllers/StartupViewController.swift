@@ -15,7 +15,17 @@ class StartupViewController: UIViewController {
     private let loginButton = MyButton(viewController: self, "login",K.Color.blue, #selector(loginPressed(_:)))
     private let signupButton = MyButton(viewController: self, "signup", K.Color.pink, #selector(signupPressed(_:)))
     
-    private var buttonHeight = 60
+    private let buttonHeight = 60
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(false)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(false)
+        navigationController?.isNavigationBarHidden = false
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +55,6 @@ class StartupViewController: UIViewController {
             b.titleLabel?.font = (UIFont(name: "System Medium", size: 30))
             b.titleLabel?.font = b.titleLabel?.font.withSize(30)
         }
-
-        
     }
     
 
@@ -56,7 +64,7 @@ class StartupViewController: UIViewController {
     }
     
     @objc func signupPressed(_ b: UIButton) {
-        print("signup")
+        performSegue(withIdentifier: K.Segues.startupToSignup, sender: b)
     }
 
 

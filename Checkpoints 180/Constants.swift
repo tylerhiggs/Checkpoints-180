@@ -18,4 +18,11 @@ struct K {
         static let blue = UIColor(named: "myBlue")!
     }
     
+    struct Segues {
+        static let startupToSignup = "startupToSignup"
+        static let signinToHome = "signinToHome"
+    }
+    
+    static let googleClientID = "542548052137-83gi15re56h4el48v4mjc6qc4oh8sg4j.apps.googleusercontent.com"
+    
 }

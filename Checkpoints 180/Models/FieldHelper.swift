@@ -9,12 +9,7 @@ import UIKit
 
 struct FieldHelper {
     
-    static func clearNavigationBar(_ viewController: UIViewController) {
-        // makes the navigation bar invisible while keeping it there (keeps the back button)
-        viewController.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        viewController.navigationController!.navigationBar.shadowImage = UIImage()
-        viewController.navigationController!.navigationBar.isTranslucent = true
-    }
+
     
     static func keyboardWillChange(notification: Notification, _ bottomConstraint: NSLayoutConstraint?, _ view: UIView) {
         if notification.userInfo != nil {

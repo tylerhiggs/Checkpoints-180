@@ -7,7 +7,6 @@ target 'Checkpoints 180' do
 
   # Pods for Checkpoints 180
   
-  pod 'Firebase/Auth'
-  pod 'Firebase/Firestore'
+  pod 'GoogleSignIn'
 
 end
