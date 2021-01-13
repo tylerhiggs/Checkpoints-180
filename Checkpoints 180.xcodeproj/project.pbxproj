@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57291EA625AF86D5004314EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57291EA525AF86D5004314EC /* LoginViewController.swift */; };
 		5731D91225A4C65A00204BC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731D91125A4C65A00204BC1 /* AppDelegate.swift */; };
 		5731D91425A4C65A00204BC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731D91325A4C65A00204BC1 /* SceneDelegate.swift */; };
 		5731D91625A4C65A00204BC1 /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731D91525A4C65A00204BC1 /* StartupViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57291EA525AF86D5004314EC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5731D90E25A4C65A00204BC1 /* Checkpoints 180.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Checkpoints 180.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5731D91125A4C65A00204BC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5731D91325A4C65A00204BC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				5731D91525A4C65A00204BC1 /* StartupViewController.swift */,
 				575BE42225A62D8800564D82 /* SignupViewController.swift */,
+				57291EA525AF86D5004314EC /* LoginViewController.swift */,
 				573E7AC425AE57700032F175 /* HomeViewController.swift */,
 			);
 			path = Controllers;
@@ -274,6 +277,7 @@
 				5731D91425A4C65A00204BC1 /* SceneDelegate.swift in Sources */,
 				575BE3DE25A562DA00564D82 /* FieldHelper.swift in Sources */,
 				575BE3E325A5694900564D82 /* Constants.swift in Sources */,
+				57291EA625AF86D5004314EC /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,11 +21,31 @@
                     <navigationItem key="navigationItem" id="tCk-8S-1UQ"/>
                     <connections>
                         <segue destination="Fh6-Oa-J4z" kind="show" identifier="startupToSignup" id="S6w-Ij-R6q"/>
+                        <segue destination="VCg-NW-9gm" kind="show" identifier="startupToLogin" id="XsZ-89-arR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="687" y="124"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="BXY-gB-gVS">
+            <objects>
+                <viewController id="VCg-NW-9gm" customClass="LoginViewController" customModule="Checkpoints_180" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LDM-rq-R9a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="i3I-oJ-iv6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kWh-rC-pN0"/>
+                    <connections>
+                        <segue destination="uAK-ss-Omt" kind="show" identifier="loginToHome" id="amR-8X-Td2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nhg-Nz-bP4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1564" y="-601"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="blQ-aT-iFp">
@@ -39,7 +59,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="TZV-fY-eWe"/>
                     <connections>
-                        <segue destination="uAK-ss-Omt" kind="show" identifier="signinToHome" id="5IB-sc-Dae"/>
+                        <segue destination="uAK-ss-Omt" kind="show" identifier="signupToHome" id="5IB-sc-Dae"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAN-05-JDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -51,7 +71,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dqM-CR-qvj" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GY3-sy-qmF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GY3-sy-qmF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -78,9 +98,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tm9-B6-8YE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-165" y="986"/>
+            <point key="canvasLocation" x="2994" y="124"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5IB-sc-Dae"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

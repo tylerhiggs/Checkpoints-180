@@ -1,19 +1,17 @@
 //
-//  SignupViewController.swift
+//  LoginViewController.swift
 //  Checkpoints 180
 //
-//  Created by Tyler Higgs on 1/6/21.
+//  Created by Tyler Higgs on 1/13/21.
 //
 
 import UIKit
 import GoogleSignIn
 
-class SignupViewController: UIViewController, GIDSignInDelegate {
+class LoginViewController: UIViewController, GIDSignInDelegate {
     
-    
-    private let signInButton =  GIDSignInButton()
     private var userObj: GIDGoogleUser?
-
+    private let signInButton = GIDSignInButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,19 +19,17 @@ class SignupViewController: UIViewController, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = K.googleClientID
         GIDSignIn.sharedInstance().delegate = self
         
-        self.clearNavigationBar()
-        view.backgroundColor = K.Color.light
-        
-        
         GIDSignIn.sharedInstance()?.presentingViewController = self
-
+        
         // Automatically sign in the user.
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        
+        self.clearNavigationBar()
+        view.backgroundColor = K.Color.light
         
         view.addSubview(signInButton)
         view.addConstraintsWithFormat(format: "H:|-15-[v0]-15-|", views: signInButton)
         view.addConstraintsWithFormat(format: "V:[v0(75)]-50-|", views: signInButton)
-        
     }
     
     
@@ -46,23 +42,20 @@ class SignupViewController: UIViewController, GIDSignInDelegate {
             print("\(error.localizedDescription)")
           }
           return
-        }        
+        }
         
 //      let idToken = user.authentication.idToken // Safe to send to the server
 
         // Make a POST request so that the server can fetch the users information or show that this is a new user and create that user
         self.userObj = user
-        performSegue(withIdentifier: K.Segues.signupToHome, sender: self)
+        performSegue(withIdentifier: K.Segues.loginToHome, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == K.Segues.signupToHome {
+        if segue.identifier == K.Segues.loginToHome {
             let destinationVC = segue.destination as! HomeViewController
-            destinationVC.setUser(self.userObj)
+            destinationVC.setUser(userObj)
         }
     }
-    
-    
-    
     
 }

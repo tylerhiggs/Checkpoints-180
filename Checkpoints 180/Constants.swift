@@ -11,6 +11,8 @@ struct K {
     
     static let padding = 20
     
+    static let fontName = "PingFangHK-Medium"
+    
     struct Color {
         static let pink = UIColor(named: "myPink")!
         static let light = UIColor(named: "myLight")!
@@ -20,7 +22,9 @@ struct K {
     
     struct Segues {
         static let startupToSignup = "startupToSignup"
-        static let signinToHome = "signinToHome"
+        static let signupToHome = "signupToHome"
+        static let loginToHome = "loginToHome"
+        static let startupToLogin = "startupToLogin"
     }
     
     static let googleClientID = "542548052137-83gi15re56h4el48v4mjc6qc4oh8sg4j.apps.googleusercontent.com"

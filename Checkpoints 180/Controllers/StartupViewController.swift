@@ -52,19 +52,18 @@ class StartupViewController: UIViewController {
         
         for b in [loginButton,signupButton] {
             b.layer.cornerRadius = CGFloat(buttonHeight / 2)
-            b.titleLabel?.font = (UIFont(name: "System Medium", size: 30))
-            b.titleLabel?.font = b.titleLabel?.font.withSize(30)
+            b.titleLabel?.font = (UIFont(name: K.fontName, size: 30))
         }
     }
     
 
     
     @objc func loginPressed(_ b: UIButton) {
-        print("login")
+        performSegue(withIdentifier: K.Segues.startupToLogin, sender: self)
     }
     
     @objc func signupPressed(_ b: UIButton) {
-        performSegue(withIdentifier: K.Segues.startupToSignup, sender: b)
+        performSegue(withIdentifier: K.Segues.startupToSignup, sender: self)
     }
 
 
