@@ -1,4 +1,16 @@
 ${PODS_ROOT}/Target Support Files/Pods-Checkpoints 180/Pods-Checkpoints 180-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework
+${BUILT_PRODUCTS_DIR}/CNIOAtomics/CNIOAtomics.framework
+${BUILT_PRODUCTS_DIR}/CNIODarwin/CNIODarwin.framework
+${BUILT_PRODUCTS_DIR}/CNIOLinux/CNIOLinux.framework
+${BUILT_PRODUCTS_DIR}/CNIOSHA1/CNIOSHA1.framework
+${BUILT_PRODUCTS_DIR}/CNIOWindows/CNIOWindows.framework
 ${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework
 ${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework
+${BUILT_PRODUCTS_DIR}/MongoSwift/MongoSwift.framework
+${BUILT_PRODUCTS_DIR}/SwiftNIO/NIO.framework
+${BUILT_PRODUCTS_DIR}/SwiftNIOConcurrencyHelpers/NIOConcurrencyHelpers.framework
+${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/bson.framework
+${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/bson.framework.dSYM
+${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/mongoc.framework
+${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/mongoc.framework.dSYM

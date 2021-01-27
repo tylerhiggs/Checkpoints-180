@@ -23,6 +23,7 @@
 		575BE42325A62D8800564D82 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575BE42225A62D8800564D82 /* SignupViewController.swift */; };
 		57D664CE25ACC01A007197A1 /* NavBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D664CD25ACC01A007197A1 /* NavBarHelper.swift */; };
 		57E666BE25B6127300F56DEF /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E666BD25B6127300F56DEF /* Secrets.swift */; };
+		57E666C925B621FD00F56DEF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E666C825B621FD00F56DEF /* User.swift */; };
 		B70A3667072A3EEA2BE08F1D /* Pods_Checkpoints_180.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D414E3E3B9496D9037D7621 /* Pods_Checkpoints_180.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		575BE42225A62D8800564D82 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		57D664CD25ACC01A007197A1 /* NavBarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarHelper.swift; sourceTree = "<group>"; };
 		57E666BD25B6127300F56DEF /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		57E666C825B621FD00F56DEF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6D414E3E3B9496D9037D7621 /* Pods_Checkpoints_180.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checkpoints_180.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F68798228CCAE5D2CD8FF7B /* Pods-Checkpoints 180.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkpoints 180.debug.xcconfig"; path = "Target Support Files/Pods-Checkpoints 180/Pods-Checkpoints 180.debug.xcconfig"; sourceTree = "<group>"; };
 		DF30D77378E79B8F61A3F691 /* Pods-Checkpoints 180.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkpoints 180.release.xcconfig"; path = "Target Support Files/Pods-Checkpoints 180/Pods-Checkpoints 180.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				575BE3DD25A562DA00564D82 /* FieldHelper.swift */,
 				57D664CD25ACC01A007197A1 /* NavBarHelper.swift */,
 				575BE41E25A61B6400564D82 /* MyButton.swift */,
+				57E666C825B621FD00F56DEF /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E666C925B621FD00F56DEF /* User.swift in Sources */,
 				575BE3DA25A5629000564D82 /* KeyboardRaisingButton.swift in Sources */,
 				57E666BE25B6127300F56DEF /* Secrets.swift in Sources */,
 				5731D91625A4C65A00204BC1 /* StartupViewController.swift in Sources */,

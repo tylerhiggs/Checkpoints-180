@@ -198,13 +198,37 @@ fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CNIOAtomics/CNIOAtomics.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CNIODarwin/CNIODarwin.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CNIOLinux/CNIOLinux.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CNIOSHA1/CNIOSHA1.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CNIOWindows/CNIOWindows.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MongoSwift/MongoSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftNIO/NIO.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftNIOConcurrencyHelpers/NIOConcurrencyHelpers.framework"
+  install_framework "${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/bson.framework"
+  install_dsym "${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/bson.framework.dSYM"
+  install_framework "${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/mongoc.framework"
+  install_dsym "${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/mongoc.framework.dSYM"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CNIOAtomics/CNIOAtomics.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CNIODarwin/CNIODarwin.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CNIOLinux/CNIOLinux.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CNIOSHA1/CNIOSHA1.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CNIOWindows/CNIOWindows.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MongoSwift/MongoSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftNIO/NIO.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftNIOConcurrencyHelpers/NIOConcurrencyHelpers.framework"
+  install_framework "${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/bson.framework"
+  install_dsym "${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/bson.framework.dSYM"
+  install_framework "${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/mongoc.framework"
+  install_dsym "${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/mongoc.framework.dSYM"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
