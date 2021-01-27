@@ -8,7 +8,5 @@ target 'Checkpoints 180' do
   # Pods for Checkpoints 180
   
   pod 'GoogleSignIn'
-  pod 'MongoSwift'
-  pod 'SwiftNIO'
 
 end

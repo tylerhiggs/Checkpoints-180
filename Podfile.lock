@@ -4,11 +4,6 @@ PODS:
     - AppAuth/ExternalUserAgent (= 1.4.0)
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
-  - CNIOAtomics (2.25.1)
-  - CNIODarwin (2.25.1)
-  - CNIOLinux (2.25.1)
-  - CNIOSHA1 (2.25.1)
-  - CNIOWindows (2.25.1)
   - GoogleSignIn (5.0.2):
     - AppAuth (~> 1.2)
     - GTMAppAuth (~> 1.0)
@@ -21,55 +16,23 @@ PODS:
   - GTMSessionFetcher/Core (1.4.0)
   - GTMSessionFetcher/Full (1.4.0):
     - GTMSessionFetcher/Core (= 1.4.0)
-  - mongo-embedded-c-driver (1.13.0-4.0.4)
-  - MongoSwift (0.1.3):
-    - mongo-embedded-c-driver (~> 1.13.0-4.0.0)
-  - SwiftNIO (2.25.1):
-    - CNIOAtomics (= 2.25.1)
-    - CNIODarwin (= 2.25.1)
-    - CNIOLinux (= 2.25.1)
-    - CNIOSHA1 (= 2.25.1)
-    - CNIOWindows (= 2.25.1)
-    - SwiftNIOConcurrencyHelpers (= 2.25.1)
-  - SwiftNIOConcurrencyHelpers (2.25.1):
-    - CNIOAtomics (= 2.25.1)
 
 DEPENDENCIES:
   - GoogleSignIn
-  - MongoSwift
-  - SwiftNIO
 
 SPEC REPOS:
   trunk:
     - AppAuth
-    - CNIOAtomics
-    - CNIODarwin
-    - CNIOLinux
-    - CNIOSHA1
-    - CNIOWindows
     - GoogleSignIn
     - GTMAppAuth
     - GTMSessionFetcher
-    - mongo-embedded-c-driver
-    - MongoSwift
-    - SwiftNIO
-    - SwiftNIOConcurrencyHelpers
 
 SPEC CHECKSUMS:
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
-  CNIOAtomics: 2ae668942b9e7ac71e0fe286d11ac9b4fe329024
-  CNIODarwin: 3874630a0e3506c3e86f272ad436103d27055831
-  CNIOLinux: e6394d7fd56d36ff43ada5796e9d96c14fcb3546
-  CNIOSHA1: 43c4a0cfdea5e8be20927d9d2237ebe4233071f8
-  CNIOWindows: 89048520e4a1484bcd5e20c252edf4089913aa7d
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GTMAppAuth: 197a8dabfea5d665224aa00d17f164fc2248dab9
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
-  mongo-embedded-c-driver: b46360baa15fc142baae80628822f26663220bde
-  MongoSwift: 5d2fdc52e72181830148ac8a90f32b8025c97177
-  SwiftNIO: 3f9a197581f6dfebf65a5c85099f25197d892c8c
-  SwiftNIOConcurrencyHelpers: 3670690a0fb8d8a0a4759804d07aaf89c9599839
 
-PODFILE CHECKSUM: 709532bcf6fca773de659ffbdc9a40d3015f4230
+PODFILE CHECKSUM: 2e9b4df843f3814f1bf19d462f2165e62a4110ee
 
 COCOAPODS: 1.9.3
